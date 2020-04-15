@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="346dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/txtTitle"
+        android:textColor="#150D7C"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="233dp"
+        android:layout_height="122dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCovert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInput">
+
+        <RadioButton
+            android:id="@+id/rBEuros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/rBEuros"
+            android:text="@string/rBEuros" />
+
+        <RadioButton
+            android:id="@+id/rBMexicanPesos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/rBMexicanPesos"
+            android:text="@string/rBMexicanPesos" />
+
+        <RadioButton
+            android:id="@+id/rBCanadianDollars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/rBCanadianDollars"
+            android:text="@string/rBCanadianDollars" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCovert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btnConvert"
+        app:layout_constraintBottom_toTopOf="@+id/txtResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="321dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#150D7C"
+        android:textColorHint="#E8B5B0B0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtUpdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCovert" />
+
+    <TextView
+        android:id="@+id/txtUpdate"
+        android:layout_width="321dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/txtUpdate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResult" />
+
+    <EditText
+        android:id="@+id/txtInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/txtInput"
+        android:inputType="numberDecimal"
+        android:textColor="#150D7C"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

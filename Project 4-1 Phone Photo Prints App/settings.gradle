@@ -1,0 +1,2 @@
+rootProject.name='Project 4-1 Phone Photo Prints App'
+include ':app'

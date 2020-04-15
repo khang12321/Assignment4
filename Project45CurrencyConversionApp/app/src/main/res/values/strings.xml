@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Project 4-5 Currency Conversion App</string>
+    <string name="txtTitle">Currency Conversion</string>
+    <string name="txtInput">U.S dollars</string>
+    <string name="rBEuros">Convert to Euros</string>
+    <string name="rBMexicanPesos">Convert to Mexican pesos</string>
+    <string name="rBCanadianDollars">Convert to Canadian Dollars</string>
+    <string name="btnConvert">Convert</string>
+    <string name="txtResult">Result</string>
+    <string name="txtUpdate">"https://www.xe.com/ 2020-04-14 16:30 UTC"</string>
+</resources>
